@@ -1,0 +1,541 @@
+export const defaultSeedData = {
+  batches: [
+    {
+      id: 'b1',
+      name: 'JEE Advanced Target 2027 (Alpha Batch)',
+      subject: 'Physics, Chemistry & Mathematics',
+      schedule: 'Mon - Fri • 08:00 AM - 12:30 PM',
+      room: 'Lecture Hall 101 (Smart AC)',
+      teacher: 'Er. Rajesh Chahar (Ex-IITian)',
+      teacherId: 'tr1',
+      teacherEmail: 'rajesh.chahar@divineclasses.in',
+      studentIds: ['s1', 's2', 's3', 's4']
+    },
+    {
+      id: 'b2',
+      name: 'NEET Medical Dropper & Foundation (Bio-Elite)',
+      subject: 'Botany, Zoology, Physics & Chemistry',
+      schedule: 'Mon - Sat • 01:30 PM - 06:00 PM',
+      room: 'Medical Hall 202',
+      teacher: 'Dr. Sunita Sharma (M.D. AIIMS)',
+      teacherId: 'tr2',
+      teacherEmail: 'dr.sunita@divineclasses.in',
+      studentIds: ['s5', 's6', 's7']
+    },
+    {
+      id: 'b3',
+      name: 'Class 10th CBSE Board Excellence & NTSE',
+      subject: 'Science, Mathematics & Social Science',
+      schedule: 'Tue, Thu, Sat • 04:30 PM - 07:00 PM',
+      room: 'Classroom 104',
+      teacher: 'Mr. Arvind Verma (M.Sc. Gold Medalist)',
+      teacherId: 'tr3',
+      teacherEmail: 'arvind.verma@divineclasses.in',
+      studentIds: ['s8', 's9']
+    }
+  ],
+  students: [
+    {
+      id: 's1',
+      roll: 'DC-101',
+      name: 'Aarav Sharma',
+      phone: '+91 98765 43210',
+      parentName: 'Rajesh Sharma',
+      batchId: 'b1',
+      totalFee: 48000,
+      paidFee: 32000,
+      monthlyFee: 1000,
+      dueDate: '2026-11-25',
+      lastReminder: '2 days ago',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-04-10'
+    },
+    {
+      id: 's2',
+      roll: 'DC-102',
+      name: 'Priya Patel',
+      phone: '+91 98234 56789',
+      parentName: 'Mukesh Patel',
+      batchId: 'b1',
+      totalFee: 48000,
+      paidFee: 48000,
+      monthlyFee: 1000,
+      dueDate: 'Paid',
+      lastReminder: '-',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-04-12'
+    },
+    {
+      id: 's3',
+      roll: 'DC-103',
+      name: 'Rohan Gupta',
+      phone: '+91 98111 22334',
+      parentName: 'Sanjay Gupta',
+      batchId: 'b1',
+      totalFee: 48000,
+      paidFee: 36000,
+      monthlyFee: 1000,
+      dueDate: '2026-11-20',
+      lastReminder: '1 week ago',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-04-15'
+    },
+    {
+      id: 's4',
+      roll: 'DC-104',
+      name: 'Sneha Verma',
+      phone: '+91 97654 32109',
+      parentName: 'Deepak Verma',
+      batchId: 'b1',
+      totalFee: 48000,
+      paidFee: 48000,
+      monthlyFee: 1000,
+      dueDate: 'Paid',
+      lastReminder: '-',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-04-18'
+    },
+    {
+      id: 's5',
+      roll: 'DC-201',
+      name: 'Kabir Khan',
+      phone: '+91 99110 02233',
+      parentName: 'Imran Khan',
+      batchId: 'b2',
+      totalFee: 52000,
+      paidFee: 26000,
+      monthlyFee: 1000,
+      dueDate: '2026-11-20',
+      lastReminder: '5 days ago',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-05-02'
+    },
+    {
+      id: 's6',
+      roll: 'DC-202',
+      name: 'Ananya Singh',
+      phone: '+91 96543 21098',
+      parentName: 'Virendra Singh',
+      batchId: 'b2',
+      totalFee: 52000,
+      paidFee: 52000,
+      monthlyFee: 1000,
+      dueDate: 'Paid',
+      lastReminder: '-',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-05-05'
+    },
+    {
+      id: 's7',
+      roll: 'DC-203',
+      name: 'Manish Rawat',
+      phone: '+91 99887 76655',
+      parentName: 'Kailash Rawat',
+      batchId: 'b2',
+      totalFee: 52000,
+      paidFee: 40000,
+      monthlyFee: 1000,
+      dueDate: '2026-11-28',
+      lastReminder: 'Yesterday',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-05-10'
+    },
+    {
+      id: 's8',
+      roll: 'DC-301',
+      name: 'Ishita Das',
+      phone: '+91 94443 32211',
+      parentName: 'Subhash Das',
+      batchId: 'b3',
+      totalFee: 30000,
+      paidFee: 22000,
+      monthlyFee: 1000,
+      dueDate: '2026-11-22',
+      lastReminder: 'Never',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-06-01'
+    },
+    {
+      id: 's9',
+      roll: 'DC-302',
+      name: 'Yashvardhan Chauhan',
+      phone: '+91 93123 45678',
+      parentName: 'Manoj Chauhan',
+      batchId: 'b3',
+      totalFee: 30000,
+      paidFee: 30000,
+      monthlyFee: 1000,
+      dueDate: 'Paid',
+      lastReminder: '-',
+      password: 'password123',
+      status: 'Active',
+      admissionDate: '2026-06-05'
+    }
+  ],
+  materials: [
+    {
+      id: 'm1',
+      batchId: 'b1',
+      title: 'Rotational Dynamics - Advanced DPP #05 with Step Hints',
+      category: 'Assignment PDF',
+      uploadDate: '12 Oct 2026',
+      uploadedBy: 'Er. Rajesh Chahar',
+      fileSize: '2.4 MB',
+      downloads: 48,
+      driveUrl: 'https://drive.google.com/',
+      description: '50 tough multi-concept questions covering Moment of Inertia, Conservation of Angular Momentum, and Pure Rolling on incline.'
+    },
+    {
+      id: 'm2',
+      batchId: 'b1',
+      title: 'Chemical Equilibrium & Ionic Equilibria Formula Booster Sheet',
+      category: 'Worksheet',
+      uploadDate: '14 Oct 2026',
+      uploadedBy: 'Dr. Meera Krishnan',
+      fileSize: '1.1 MB',
+      downloads: 39,
+      driveUrl: 'https://drive.google.com/',
+      description: 'Complete high-yield shortcut formulas, Ostwald dilution law, buffer solutions, and solubility product numerical tables.'
+    },
+    {
+      id: 'm3',
+      batchId: 'b1',
+      title: 'Divine Classes JEE Mock Test #03 (Paper 1 & 2 + Answer Key)',
+      category: 'Test Paper',
+      uploadDate: '10 Oct 2026',
+      uploadedBy: 'Er. Rajesh Chahar',
+      fileSize: '3.6 MB',
+      downloads: 55,
+      driveUrl: 'https://drive.google.com/',
+      description: 'Official full-syllabus simulation offline test paper held on Sunday with detailed marking scheme and video solution links.'
+    },
+    {
+      id: 'm4',
+      batchId: 'b2',
+      title: 'NEET Human Genetics & Molecular Biology NCERT Drill',
+      category: 'Worksheet',
+      uploadDate: '13 Oct 2026',
+      uploadedBy: 'Dr. Sunita Sharma',
+      fileSize: '2.8 MB',
+      downloads: 42,
+      driveUrl: 'https://drive.google.com/',
+      description: 'Line-by-line NCERT diagram drills, pedigree charts, and 120 assertion-reason practice questions.'
+    },
+    {
+      id: 'm5',
+      batchId: 'b3',
+      title: 'CBSE 10th Standard Mathematics Real Numbers & Polynomials Board Paper',
+      category: 'Test Paper',
+      uploadDate: '11 Oct 2026',
+      uploadedBy: 'Mr. Arvind Verma',
+      fileSize: '1.4 MB',
+      downloads: 31,
+      driveUrl: 'https://drive.google.com/',
+      description: 'CBSE previous 10-year question compilation with step-marking criteria for term exams.'
+    }
+  ],
+  offlineTests: [
+    {
+      id: 't1',
+      batchId: 'b1',
+      title: 'Offline Minor Test #1 - Kinematics, NLM & Vectors',
+      subject: 'Physics',
+      date: '05 Oct 2026',
+      maxMarks: 100,
+      marks: {
+        's1': { score: 92, remarks: 'Outstanding conceptual clarity!' },
+        's2': { score: 96, remarks: 'Batch Topper • Flawless calculations' },
+        's3': { score: 84, remarks: 'Good accuracy, revise friction problems' },
+        's4': { score: 88, remarks: 'Solid performance across all questions' }
+      }
+    },
+    {
+      id: 't2',
+      batchId: 'b1',
+      title: 'Offline Grand Test #2 - Physical & Inorganic Chemistry',
+      subject: 'Chemistry',
+      date: '12 Oct 2026',
+      maxMarks: 100,
+      marks: {
+        's1': { score: 89, remarks: 'Great improvement in thermodynamics' },
+        's2': { score: 94, remarks: 'Excellent stoichiometry work' },
+        's3': { score: 79, remarks: 'Focus on reaction mechanisms' },
+        's4': { score: 91, remarks: 'Very neat formula application' }
+      }
+    },
+    {
+      id: 't3',
+      batchId: 'b2',
+      title: 'NEET Offline Minor Test - Cell Division & Plant Kingdom',
+      subject: 'Biology',
+      date: '08 Oct 2026',
+      maxMarks: 720,
+      marks: {
+        's5': { score: 628, remarks: 'Strong Botany score, revise meiosis stages' },
+        's6': { score: 680, remarks: 'Top Ranker in Divine Classes! AIIMS caliber' },
+        's7': { score: 590, remarks: 'Improve speed in genetics numericals' }
+      }
+    },
+    {
+      id: 't4',
+      batchId: 'b3',
+      title: 'Class 10 CBSE Offline Term Assessment #1',
+      subject: 'Mathematics & Science',
+      date: '09 Oct 2026',
+      maxMarks: 80,
+      marks: {
+        's8': { score: 73, remarks: 'Neat geometry diagrams and proofs' },
+        's9': { score: 78, remarks: 'Excellent, 100% accuracy in Algebra' }
+      }
+    }
+  ],
+  teachers: [
+    {
+      id: 'tr1',
+      name: 'Er. Rajesh Chahar',
+      subject: 'Senior Physics Faculty & Academic Director',
+      qualification: 'B.Tech (IIT Roorkee), M.Tech',
+      experience: '15+ Years Experience',
+      email: 'rajesh.chahar@divineclasses.in',
+      phone: '+91 95556 78753',
+      specialization: 'Rotational Dynamics, Electromagnetism & JEE Advanced Strategy',
+      bio: 'Founder of Divine Classes. Mentored 800+ IITians and NITians. Known for breaking down complex physics into crystal-clear intuitive models.',
+      avatarColor: 'bg-indigo-600',
+      initials: 'RC',
+      password: 'teacher123',
+      status: 'Active'
+    },
+    {
+      id: 'tr2',
+      name: 'Dr. Sunita Sharma',
+      subject: 'Head of Biology & Medical Entrance Wing',
+      qualification: 'M.B.B.S, M.D. (AIIMS New Delhi)',
+      experience: '12+ Years Experience',
+      email: 'dr.sunita@divineclasses.in',
+      phone: '+91 98234 56789',
+      specialization: 'Human Physiology, Genetics & High-Yield NEET Revision',
+      bio: 'Former clinical fellow turned passionate NEET coach. Produced multiple top-100 All India Ranks in NEET-UG with 350+/360 biology scores.',
+      avatarColor: 'bg-emerald-600',
+      initials: 'SS',
+      password: 'teacher123',
+      status: 'Active'
+    },
+    {
+      id: 'tr3',
+      name: 'Mr. Arvind Verma',
+      subject: 'Mathematics Mentor & Olympiad Specialist',
+      qualification: 'M.Sc. Mathematics (Gold Medalist)',
+      experience: '11+ Years Experience',
+      email: 'arvind.verma@divineclasses.in',
+      phone: '+91 98345 67890',
+      specialization: 'Calculus, Vectors-3D & Rapid Problem Solving Shortcuts',
+      bio: 'Celebrated for transforming mathematics from a feared subject into a scoring powerhouse. Author of shortcut trick compilations for competitive tests.',
+      avatarColor: 'bg-amber-600',
+      initials: 'AV',
+      password: 'teacher123',
+      status: 'Active'
+    },
+    {
+      id: 'tr4',
+      name: 'Dr. Meera Krishnan',
+      subject: 'Senior Chemistry Faculty (Organic & Physical)',
+      qualification: 'Ph.D. Chemistry (IISc Bangalore)',
+      experience: '10+ Years Experience',
+      email: 'meera.krishnan@divineclasses.in',
+      phone: '+91 98456 78901',
+      specialization: 'Named Reaction Mechanisms, Thermodynamics & GOC',
+      bio: 'Believes in zero rote-memorization. Uses molecular 3D models to make organic synthesis reaction pathways stick effortlessly.',
+      avatarColor: 'bg-purple-600',
+      initials: 'MK',
+      password: 'teacher123',
+      status: 'Active'
+    }
+  ],
+  gallery: [
+    {
+      id: 'g1',
+      title: 'JEE Advanced 2026 - All India Top 100 Toppers Felicitation',
+      category: 'Result Banner',
+      date: 'June 2026',
+      caption: 'Divine Classes champions shine bright! AIR 14, AIR 28, and 18 students securing 99.5+ percentile in JEE Advanced.',
+      badge: 'AIR 14, 28, 64',
+      imageUrl: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      id: 'g2',
+      title: 'NEET Medical Selections Felicitation Ceremony',
+      category: 'Result Banner',
+      date: 'June 2026',
+      caption: '46 selections in Govt. Medical Colleges including AIIMS, MAMC, and LHMC. Highest score: 685/720.',
+      badge: '685/720 Highest',
+      imageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      id: 'g3',
+      title: 'Interactive Smart AC Classroom & Doubt Clearing Sessions',
+      category: 'Classroom Photo',
+      date: 'September 2026',
+      caption: 'Lecture Hall 101 equipped with interactive smart panels, live problem projections, and ergonomic seating.',
+      badge: 'Smart Hall 101',
+      imageUrl: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      id: 'g4',
+      title: 'Annual Merit Scholarship & Trophy Distribution Day',
+      category: 'Event',
+      date: 'August 2026',
+      caption: 'Over ₹5 Lakhs worth of merit-cum-means scholarships awarded to meritorious students by Divine Classes management.',
+      badge: 'Annual Day',
+      imageUrl: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80'
+    }
+  ],
+  externalLinks: [
+    {
+      id: 'l1',
+      title: 'DIKSHA / NCERT Official Portal - Free e-Textbooks (Class 1-12)',
+      provider: 'NCERT & Ministry of Education',
+      subject: 'Physics, Chemistry, Maths, Biology',
+      url: 'https://diksha.gov.in/',
+      driveUrl: '',
+      description: 'Official national digital repository with authentic chapter-by-chapter NCERT books, exemplars, and interactive study modules.',
+      icon: 'fa-book-open',
+      color: 'bg-blue-600'
+    },
+    {
+      id: 'l2',
+      title: 'National Digital Library of India (NDLI)',
+      provider: 'Ministry of Education & IIT Kharagpur',
+      subject: 'JEE / NEET / Olympiad',
+      url: 'https://www.ndl.gov.in/',
+      driveUrl: '',
+      description: 'Vast repository of video lectures, solved past question archives, and academic monographs.',
+      icon: 'fa-building-columns',
+      color: 'bg-slate-600'
+    },
+    {
+      id: 'l3',
+      title: 'Khan Academy India - Concept Mastery Modules',
+      provider: 'Khan Academy',
+      subject: 'Foundation Science & Calculus',
+      url: 'https://www.khanacademy.org/',
+      driveUrl: '',
+      description: 'Bite-sized visual lessons, step-by-step calculus proofs, and interactive diagnostic quizzes.',
+      icon: 'fa-circle-play',
+      color: 'bg-emerald-600'
+    },
+    {
+      id: 'l4',
+      title: 'PhET Interactive STEM Laboratory Simulations',
+      provider: 'University of Colorado Boulder',
+      subject: 'Physics & Chemistry Labs',
+      url: 'https://phet.colorado.edu/',
+      driveUrl: '',
+      description: 'Experiment with electrical circuits, wave interference, photo-electric effect, and chemical titrations virtually.',
+      icon: 'fa-flask',
+      color: 'bg-purple-600'
+    },
+    {
+      id: 'l5',
+      title: 'CBSE Official Examination Portal - Syllabus & Question Banks',
+      provider: 'CBSE Board',
+      subject: 'Class 10th & 12th Board Exams',
+      url: 'https://www.cbse.gov.in/',
+      driveUrl: '',
+      description: 'Official latest board examination blue-prints, competency-focused question banks, curriculum circulars, and answer rubrics.',
+      icon: 'fa-file-lines',
+      color: 'bg-rose-600'
+    }
+  ],
+  feedbacks: [
+    {
+      id: 'f1',
+      authorName: 'Rajesh Sharma (Parent of Aarav Sharma)',
+      role: 'Parent',
+      batchName: 'JEE Advanced Target 2027 (Alpha Batch)',
+      category: 'Teaching Quality',
+      rating: 5,
+      date: '13 Oct 2026',
+      comment: 'Divine Classes has transformed Aarav’s problem-solving approach. Er. Rajesh Chahar sir’s physics lectures and individual doubt attention are exceptional!'
+    },
+    {
+      id: 'f2',
+      authorName: 'Ananya Singh',
+      role: 'Student',
+      batchName: 'NEET Medical Dropper & Foundation',
+      category: 'Study Material',
+      rating: 5,
+      date: '10 Oct 2026',
+      comment: 'The offline test analysis and Dr. Sunita ma’am’s NCERT biology booster worksheets are the main reason my mock test scores jumped from 520 to 660+!'
+    },
+    {
+      id: 'f3',
+      authorName: 'Sanjay Gupta (Parent of Rohan Gupta)',
+      role: 'Parent',
+      batchName: 'JEE Advanced Target 2027 (Alpha Batch)',
+      category: 'Offline Test Series',
+      rating: 5,
+      date: '06 Oct 2026',
+      comment: 'Very disciplined institute. Receiving regular offline test marks and updates gives us complete peace of mind about our ward’s exam prep.'
+    }
+  ],
+  notifications: [
+    { id: 'notif_1', title: 'Fee Due Reminder', message: 'Monthly tuition fees for November cycle are now active for enrolled students.', time: 'Today', timestamp: Date.now() - 1000 * 60 * 30, read: false, targetRole: 'all', actionTab: 'fees' },
+    { id: 'notif_2', title: 'Grand Mock Test Result Published', message: 'Offline Grand Test #2 results have been posted to your report card.', time: 'Yesterday', timestamp: Date.now() - 1000 * 60 * 60 * 24, read: false, targetRole: 'student', actionTab: 'marks' },
+    { id: 'notif_3', title: 'New DPP Study Material Added', message: 'Er. Rajesh Chahar uploaded Rotational Dynamics DPP #05 with Step Hints.', time: '2 days ago', timestamp: Date.now() - 1000 * 60 * 60 * 48, read: true, targetRole: 'student', actionTab: 'materials' }
+  ],
+  attendanceRecords: [
+    { id: 'att_1', date: '2026-11-10', batchId: 'b1', studentId: 's1', status: 'Present', markedBy: 'Er. Rajesh Chahar' },
+    { id: 'att_2', date: '2026-11-10', batchId: 'b1', studentId: 's2', status: 'Present', markedBy: 'Er. Rajesh Chahar' },
+    { id: 'att_3', date: '2026-11-10', batchId: 'b1', studentId: 's3', status: 'Late', markedBy: 'Er. Rajesh Chahar' },
+    { id: 'att_4', date: '2026-11-10', batchId: 'b1', studentId: 's4', status: 'Present', markedBy: 'Er. Rajesh Chahar' },
+    { id: 'att_5', date: '2026-11-11', batchId: 'b1', studentId: 's1', status: 'Present', markedBy: 'Er. Rajesh Chahar' },
+    { id: 'att_6', date: '2026-11-11', batchId: 'b1', studentId: 's2', status: 'Present', markedBy: 'Er. Rajesh Chahar' },
+    { id: 'att_7', date: '2026-11-11', batchId: 'b1', studentId: 's3', status: 'Present', markedBy: 'Er. Rajesh Chahar' },
+    { id: 'att_8', date: '2026-11-11', batchId: 'b1', studentId: 's4', status: 'Absent', markedBy: 'Er. Rajesh Chahar' },
+    { id: 'att_9', date: '2026-11-10', batchId: 'b2', studentId: 's5', status: 'Present', markedBy: 'Dr. Sunita Sharma' },
+    { id: 'att_10', date: '2026-11-10', batchId: 'b2', studentId: 's6', status: 'Present', markedBy: 'Dr. Sunita Sharma' },
+    { id: 'att_11', date: '2026-11-10', batchId: 'b2', studentId: 's7', status: 'Present', markedBy: 'Dr. Sunita Sharma' },
+    { id: 'att_12', date: '2026-11-10', batchId: 'b3', studentId: 's8', status: 'Present', markedBy: 'Mr. Arvind Verma' },
+    { id: 'att_13', date: '2026-11-10', batchId: 'b3', studentId: 's9', status: 'Present', markedBy: 'Mr. Arvind Verma' }
+  ],
+  settings: {
+    instituteName: 'Divine Classes',
+    tagline: 'Empowering Aspirants for JEE, NEET & Board Excellence',
+    phone: '+91 95556 78753',
+    contactDisplay: '9555-6787-53',
+    email: 'contact@divineclasses.in',
+    address: '235 Paschimpuri Pocket 2, Club Rd New Delhi 110063',
+    upiId: 'divineclasses@upi',
+    facebookUrl: 'https://www.facebook.com/edivineclasses/?_rdr',
+    instagramUrl: 'https://www.instagram.com/divineclasses_paschimpuri?utm_source=qr&dlrf=enk4MXRodTU3YTdq',
+    youtubeUrl: 'https://www.youtube.com/@chemcrush?si=VyfGmd_WwqQiU7j8',
+    adminName: 'Ravi Shankar',
+    adminPassword: 'admin123',
+    adminEmail: 'divineclasses1010@gmail.com',
+    leadDevEmail: 'anil.chahar170@gmail.com',
+    leadDevPassword: 'Anil@1310',
+    showRequirementLabels: false,
+    chatbotEnabled: true,
+    demoLoginEnabled: true,
+    allowAdminFeedbackDelete: true,
+    allowAdminLinkDelete: true,
+    showDummyData: true,
+    dummyDataWiped: false,
+    sheetsMirrorEnabled: true,
+    themeToggleRoles: { admin: true, teacher: true, student: true },
+    themeMenuButtonRoles: { admin: true, teacher: true, student: true },
+    guideButtonRoles: { admin: true, teacher: true, student: true },
+    supabaseEnabled: true,
+    supabaseUrl: 'https://srjqsofkjizwskqnzyfn.supabase.co',
+    supabaseKey: 'sb_publishable_vxonFVKPpyJjY5O-Y9mS6g_bhSYCcsS',
+    sheetsWebAppUrl: 'https://script.google.com/macros/s/AKfycbzW3POboCUJfKE2W-vFKVRMvwu6Q6OV9yELYhy-SZTVSQY8nlO43Kj1PhlNUeTj0JtV/exec'
+  }
+};
