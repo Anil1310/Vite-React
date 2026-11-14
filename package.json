@@ -1,0 +1,9 @@
+{
+  "name": "divine-classes",
+  "private": true,
+  "version": "2.5.0",
+  "scripts": {
+    "build": "npm --prefix ReactClient run build",
+    "dev": "npm --prefix ReactClient run dev"
+  }
+}

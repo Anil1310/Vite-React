@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm --prefix ReactClient run build",
+  "outputDirectory": "ReactClient/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
