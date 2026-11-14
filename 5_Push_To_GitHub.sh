@@ -7,7 +7,7 @@ cd "$(dirname "$0")"
 git init
 git branch -M main
 git remote remove origin 2>/dev/null || true
-git remote add origin https://github.com/Anil1310/Vite-React.git
+git remote add origin https://Anil1310@github.com/Anil1310/Vite-React.git
 git add .
 git commit -m "feat: complete Vite + React SPA ready for Vercel" 2>/dev/null || true
 echo ""
